@@ -36,7 +36,7 @@ export const translations = {
       eduMajor: "Kỹ thuật Điện tử & Truyền thông",
       headline: "Khai phá sức mạnh Lập trình & Thiết kế Phần mềm với niềm đam mê cháy bổng",
       bio: "Tôi là một kỹ sư phần mềm luôn lấy sự tò mò và tư duy giải quyết vấn đề làm động lực. Đam mê học hỏi công nghệ mới, phát triển phần mềm từ quy mô nhỏ đến lớn có tính ứng dụng cao và chia sẻ kiến thức để giúp đội ngũ cùng phát triển. Mục tiêu trong 5 năm tới của tôi là trở thành Technical Leader dẫn dắt team tạo ra các sản phẩm chất lượng cao.",
-      skillsHeader: "Technical Arsenal & Core Skills"
+      skillsHeader: "Technical & Core Skills"
     },
     projects: {
       sectionTitle: "02. // DỰ ÁN TIÊU BIỂU",
@@ -127,7 +127,7 @@ export const translations = {
       eduMajor: "Electronics & Communication Engineering",
       headline: "Passionate Software Engineer dedicated to high-impact products",
       bio: "Passionate software engineer dedicated to building products that deliver real value and a great experience to users. Driven by curiosity — always learning new technologies, solving meaningful problems across small to large systems, and sharing what I learn to help others grow in the field. Over the next five years, my goal is to grow into a technical leadership role, guiding a team to consistently deliver high-quality, high-impact products.",
-      skillsHeader: "Technical Arsenal & Core Skills"
+      skillsHeader: "Technical & Core Skills"
     },
     projects: {
       sectionTitle: "02. // FEATURED PROJECTS",

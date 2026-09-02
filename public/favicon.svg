@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <radialGradient id="favGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#00f0ff" />
+      <stop offset="80%" stop-color="#ff0055" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Dark Circle -->
+  <circle cx="50" cy="50" r="48" fill="#090d16" stroke="#00f0ff" stroke-width="2" />
+
+  <!-- Orbit Tech Rings -->
+  <circle cx="50" cy="50" r="36" stroke="#00f0ff" stroke-width="2" stroke-dasharray="8 4" opacity="0.8" />
+  <circle cx="50" cy="50" r="26" stroke="#ff0055" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8" />
+
+  <!-- Synaptic Axon Interconnect Lines -->
+  <line x1="50" y1="14" x2="50" y2="86" stroke="#00f0ff" stroke-width="1.5" opacity="0.6" />
+  <line x1="14" y1="50" x2="86" y2="50" stroke="#ff0055" stroke-width="1.5" opacity="0.6" />
+  <line x1="24" y1="24" x2="76" y2="76" stroke="#00f0ff" stroke-width="1" opacity="0.5" />
+  <line x1="76" y1="24" x2="24" y2="76" stroke="#ff0055" stroke-width="1" opacity="0.5" />
+
+  <!-- Outer Firing Synapse Nodes -->
+  <circle cx="50" cy="14" r="4" fill="#00f0ff" />
+  <circle cx="50" cy="86" r="4" fill="#00f0ff" />
+  <circle cx="14" cy="50" r="4" fill="#ff0055" />
+  <circle cx="86" cy="50" r="4" fill="#ff0055" />
+
+  <!-- Central Glowing Neural Nucleus Core -->
+  <circle cx="50" cy="50" r="16" fill="url(#favGlow)" />
+  <circle cx="50" cy="50" r="6" fill="#ffffff" />
+</svg>

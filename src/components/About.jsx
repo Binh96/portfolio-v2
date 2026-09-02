@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Zap, Mail, Phone, MapPin, Linkedin, Github, GraduationCap } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import avatarImg from '../assets/avatar.jpg';
 
 const DEV_NAME = import.meta.env.VITE_DEVELOPER_NAME || "PHAN XUÂN BÍNH";
 const CONTACT_PHONE = import.meta.env.VITE_CONTACT_PHONE || "0764 648 930";
@@ -35,10 +36,10 @@ export default function About() {
 
             <div className="flex items-center space-x-5">
               <div className="relative">
-                {/* REAL EXTRACTED PORTRAIT PHOTO FROM PDF */}
+                {/* IMPORTED AVATAR ASSET (ROBUST ON GITHUB PAGES & ALL BASE PATHS) */}
                 <div className="w-24 h-24 rounded-xl bg-slate-900 border-2 border-cyan-400 flex items-center justify-center overflow-hidden shadow-lg cyber-cyan-glow">
                   <img 
-                    src="/avatar.jpg" 
+                    src={avatarImg} 
                     alt={DEV_NAME} 
                     className="w-full h-full object-cover hover:scale-110 transition duration-300"
                   />
