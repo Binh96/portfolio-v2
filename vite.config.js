@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './', // Ensures relative asset paths work on GitHub Pages subpaths
+  base: '/portfolio-v2/', // Exact base URL path for GitHub Pages repository Binh96/portfolio-v2
   plugins: [react(), tailwindcss()],
 });
