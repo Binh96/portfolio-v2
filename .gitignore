@@ -6,7 +6,8 @@
 ._*
 
 # Custom folder icons
-Icon
+Icon
+
 
 # Volume root files
 .DocumentRevisions-V100
@@ -43,3 +44,12 @@ $RECYCLE.BIN/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# agent
+.agents
+ai-context
+
+# project
+/node_modules
+/dist
+.env
