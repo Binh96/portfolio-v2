@@ -163,6 +163,36 @@ export default function ProjectDetailModal({ project, isOpen, onClose }) {
           "Executed thorough end-to-end testing cycles to ensure high availability and stability."
         ]
       }
+    },
+    5: {
+      vi: {
+        role: "Tác giả / Full-Stack & System Architect",
+        company: "Personal Project (Dự án cá nhân)",
+        arch: "Clean / Hexagonal Architecture (NestJS + Angular 18 + Gemini AI + pgvector)",
+        duration: "2026 - Hiện tại",
+        overview: "MindFlow là nền tảng quản lý tri thức cá nhân và học tập chuyên sâu dành cho Software Engineer. Dự án giải quyết vấn đề phân mảnh thông tin bằng cách kết hợp sức mạnh của Generative AI và Vector Database để tự động thu nạp (ingest), tổng hợp và trực quan hóa tài liệu thành các sơ đồ kiến trúc hệ thống, ma trận trade-off và mạng lưới liên kết khái niệm (Knowledge Graph). Giao diện được thiết kế theo phong cách Neo-brutalism / Cyberpunk Dark Mode, tối ưu hóa trải nghiệm đọc tập trung (Zen Mode) và tích hợp thuật toán ôn tập ngắt quãng (Spaced Repetition).",
+        highlights: [
+          "AI Technical Distillation: Tự động phân tích và sinh sơ đồ Mermaid (System Architecture & Sequence Flow), callout chỉ số kỹ thuật và ma trận đánh đổi.",
+          "Vector Semantic Search & Graph: Tìm kiếm ngữ nghĩa bằng pgvector trên PostgreSQL 16 và trực quan hóa mối quan hệ giữa các chủ đề bằng đồ thị 2 chiều.",
+          "Kiến trúc Clean/Hexagonal: Backend NestJS tuân thủ nghiêm ngặt nguyên tắc SOLID, Dependency Inversion và Modular Monolith; Frontend Angular 18+ reactive với Signals.",
+          "Testing & Quality: 100% test coverage trên các use cases cốt lõi với Jest & Karma.",
+          "Tech Stack: Frontend Angular 18+ (Standalone, Signals), Tailwind CSS (Cyberpunk Neo-brutalism theme), Mermaid.js; Backend NestJS, TypeScript, Clean/Hexagonal Architecture; AI & Data: Google Gemini API, PostgreSQL 16 (pgvector), MinIO / Cloudflare R2."
+        ]
+      },
+      en: {
+        role: "Creator / Full-Stack & System Architect",
+        company: "Personal Project",
+        arch: "Clean / Hexagonal Architecture (NestJS + Angular 18 + Gemini AI + pgvector)",
+        duration: "2026 - Present",
+        overview: "MindFlow is an engineer-centric personal knowledge operating system designed to streamline continuous learning and architectural knowledge management. Powered by Google Gemini and pgvector (PostgreSQL 16), the platform ingests complex engineering resources and distillates them into production-ready technical infographics—featuring system architecture diagrams, sequence flows, trade-off matrices, and key performance metrics. Built with a Neo-brutalism Cyberpunk Dark Mode aesthetic, it features an interactive bidirectional Knowledge Graph, a split-pane Markdown editor with real-time Mermaid preview, and a Spaced Repetition engine for knowledge retention.",
+        highlights: [
+          "Automated Technical Infographics: Generates reactive Mermaid diagrams and engineering metric callouts directly from raw technical articles.",
+          "Semantic Retrieval & Neural Graph: High-dimensional vector embeddings with PostgreSQL pgvector paired with an interactive node-link concept map.",
+          "Clean Architecture: NestJS backend built on Hexagonal/DDD principles; Angular 18+ frontend utilizing reactive Signals and modern web standards.",
+          "Testing & Quality: 100% test coverage on core use cases using Jest & Karma.",
+          "Tech Stack: Frontend Angular 18+ (Standalone, Signals), Tailwind CSS (Cyberpunk Neo-brutalism theme), Mermaid.js; Backend NestJS, TypeScript, Clean/Hexagonal Architecture; AI & Data: Google Gemini API, PostgreSQL 16 (pgvector), MinIO / Cloudflare R2."
+        ]
+      }
     }
   };
 
@@ -204,6 +234,20 @@ export default function ProjectDetailModal({ project, isOpen, onClose }) {
 
         {/* MODAL BODY */}
         <div className="p-6 overflow-y-auto space-y-6 text-slate-700 text-sm leading-relaxed">
+          
+          {/* SHOWCASE BANNER / PREVIEW (IF AVAILABLE) */}
+          {project.image && (
+            <div className="w-full h-52 sm:h-64 rounded-xl overflow-hidden border border-slate-200 shadow-md relative bg-slate-900 group">
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-sm text-cyan-400 font-orbitron text-[10px] px-2.5 py-1 rounded border border-cyan-500/30">
+                LIVE DEMO PREVIEW
+              </div>
+            </div>
+          )}
           
           {/* META METRICS GRID */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-orbitron text-xs">

@@ -26,7 +26,7 @@ export const translations = {
       location: "Cầu Kiệu, TP. Hồ Chí Minh, Việt Nam",
       expYears: "4+ Năm",
       expLabel: "KINH NGHIỆM",
-      projDone: "4+ Hệ Thống",
+      projDone: "5+ Hệ Thống",
       projLabel: "DỰ ÁN HOÀN THÀNH",
       archLabel: "CHUYÊN MÔN",
       archValue: "Microservices & DDD",
@@ -44,6 +44,7 @@ export const translations = {
       btnAll: "TẤT CẢ DỰ ÁN",
       btnMicro: "MICROSERVICES",
       btnErp: "ERP & FASTAPI",
+      btnAi: "AI & KNOWLEDGE",
       btnDetails: "CHI TIẾT",
       p1Title: "20-GL_TMS & 20-GGC",
       p1Badge: "DỰ ÁN 3SI",
@@ -56,7 +57,10 @@ export const translations = {
       p3Desc: "Hệ thống quản lý lương doanh nghiệp viết bằng Java áp dụng chặt chẽ Domain-Driven Design (DDD). Xây dựng luồng truyền nhận dữ liệu qua SFTP an toàn và giao diện VueJS / Vuetify.",
       p4Title: "20-PHS",
       p4Badge: "DỰ ÁN 3SI",
-      p4Desc: "Ứng dụng đặt lịch hẹn và quản lý lịch trình y tế/dịch vụ phát triển trên nền tảng ReactJS kết hợp Java API backend tích hợp đồng bộ dữ liệu mượt mà."
+      p4Desc: "Ứng dụng đặt lịch hẹn và quản lý lịch trình y tế/dịch vụ phát triển trên nền tảng ReactJS kết hợp Java API backend tích hợp đồng bộ dữ liệu mượt mà.",
+      p5Title: "Mind-Storage (MindFlow)",
+      p5Badge: "Own",
+      p5Desc: "MindFlow — Hệ thống quản trị tri thức và đúc kết tài liệu kỹ thuật cá nhân (Knowledge OS) tích hợp AI, tự động chuyển đổi các bài viết chuyên sâu thành Infographic kiến trúc (Architecture & Sequence Flow), mạng lưới tri thức hai chiều và tìm kiếm ngữ nghĩa bằng Vector Search."
     },
     experience: {
       sectionTitle: "03. // KINH NGHIỆM LÀM VIỆC",
@@ -117,7 +121,7 @@ export const translations = {
       location: "Cau Kieu, Ho Chi Minh City, Viet Nam",
       expYears: "4+ Years",
       expLabel: "EXPERIENCE",
-      projDone: "4+ Systems",
+      projDone: "5+ Systems",
       projLabel: "PROJECTS COMPLETED",
       archLabel: "SPECIALIZATION",
       archValue: "Microservices & DDD",
@@ -135,6 +139,7 @@ export const translations = {
       btnAll: "ALL PROJECTS",
       btnMicro: "MICROSERVICES",
       btnErp: "ERP & FASTAPI",
+      btnAi: "AI & KNOWLEDGE",
       btnDetails: "DETAILS",
       p1Title: "20-GL_TMS & 20-GGC",
       p1Badge: "3SI PROJECT",
@@ -147,7 +152,10 @@ export const translations = {
       p3Desc: "Enterprise salary management system built in Java strictly adhering to Domain-Driven Design (DDD). Configured SFTP file pipelines and intuitive VueJS / Vuetify frontend screens.",
       p4Title: "20-PHS",
       p4Badge: "3SI PROJECT",
-      p4Desc: "Medical and service appointment scheduling application built on ReactJS with integrated Java backend APIs for seamless real-time data sync."
+      p4Desc: "Medical and service appointment scheduling application built on ReactJS with integrated Java backend APIs for seamless real-time data sync.",
+      p5Title: "Mind-Storage (MindFlow)",
+      p5Badge: "Own",
+      p5Desc: "MindFlow — An AI-powered Personal Knowledge & Learning OS for Software Engineers, turning complex technical documentation into actionable Architecture & Flow Infographics, bidirectional knowledge graphs, and semantic vector-searchable nodes."
     },
     experience: {
       sectionTitle: "03. // WORK EXPERIENCE",

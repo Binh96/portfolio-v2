@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Server, Database, Cpu, Calendar, ExternalLink } from 'lucide-react';
+import { Server, Database, Cpu, Calendar, ExternalLink, Brain } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ProjectDetailModal from './ProjectDetailModal';
+import mindStorageGif from '../assets/portfolio-showcase-compact.gif';
 
 export default function Projects() {
   const [filter, setFilter] = useState('ALL');
@@ -9,6 +10,20 @@ export default function Projects() {
   const { t } = useLanguage();
 
   const projectsData = [
+    {
+      id: 5,
+      title: t('projects.p5Title'),
+      category: t('projects.p5Badge'),
+      desc: t('projects.p5Desc'),
+      image: mindStorageGif,
+      icon: Brain,
+      iconColor: 'text-emerald-400',
+      badgeBg: 'bg-emerald-600',
+      borderHover: 'hover:border-emerald-400',
+      titleHover: 'group-hover:text-emerald-600',
+      tags: ['#Angular18', '#NestJS', '#Gemini_AI', '#pgvector', '#Clean_Architecture', '#MermaidJS'],
+      type: 'AI_KNOWLEDGE'
+    },
     {
       id: 1,
       title: t('projects.p1Title'),
@@ -98,6 +113,12 @@ export default function Projects() {
             >
               {t('projects.btnErp')}
             </button>
+            <button 
+              onClick={() => setFilter('AI')}
+              className={`px-4 py-2 rounded border transition ${filter === 'AI' ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-white text-slate-700 hover:text-emerald-600 border-slate-200'}`}
+            >
+              {t('projects.btnAi')}
+            </button>
           </div>
         </div>
 
@@ -112,12 +133,25 @@ export default function Projects() {
                 className={`bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl ${proj.borderHover} transition-all duration-300 group flex flex-col clip-corner cursor-pointer`}
               >
                 <div className="h-44 bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
-                  <div className={`${proj.iconColor} group-hover:scale-110 transition duration-500 flex flex-col items-center`}>
-                    <IconComp className="w-14 h-14 animate-pulse" />
-                    <span className="font-orbitron text-xs mt-2 tracking-widest uppercase">PRODUCTION SYSTEM</span>
-                  </div>
-                  <span className={`absolute top-3 left-3 z-20 px-2.5 py-1 ${proj.badgeBg} text-white text-[10px] font-orbitron font-bold rounded`}>
+                  {proj.image ? (
+                    <>
+                      <img 
+                        src={proj.image} 
+                        alt={proj.title} 
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" 
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 pointer-events-none"></div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
+                      <div className={`${proj.iconColor} group-hover:scale-110 transition duration-500 flex flex-col items-center`}>
+                        <IconComp className="w-14 h-14 animate-pulse" />
+                        <span className="font-orbitron text-xs mt-2 tracking-widest uppercase">PRODUCTION SYSTEM</span>
+                      </div>
+                    </>
+                  )}
+                  <span className={`absolute top-3 left-3 z-20 px-2.5 py-1 ${proj.badgeBg} text-white text-[10px] font-orbitron font-bold rounded shadow-sm`}>
                     {proj.category}
                   </span>
                 </div>
